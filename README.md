@@ -1,6 +1,8 @@
 # fitzgerald-vue
 
 [![CI](https://github.com/voronkovich/fitzgerald-vue/actions/workflows/ci.yaml/badge.svg)](https://github.com/voronkovich/fitzgerald-vue/actions/workflows/ci.yaml)
+[![Package Version](https://img.shields.io/npm/v/fitzgerald-vue.svg)](https://www.npmjs.com/package/fitzgerald-vue)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
 [Fitzgerald](https://github.com/voronkovich/fitzgerald) integration for [Vue](https://vuejs.org/).
 
