@@ -9,7 +9,6 @@
   "dependencies": {
     "fitzgerald": "^0.2.0",
     "fitzgerald-vue": "0.0.0",
-    "promise-polyfill": "^8.2.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
