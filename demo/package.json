@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "fitzgerald": "^0.2.0",
+    "fitzgerald": "^0.4.0",
     "fitzgerald-vue": "0.0.0",
     "vue": "^3.0.5"
   },
