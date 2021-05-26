@@ -6,6 +6,8 @@
 
 [Fitzgerald](https://github.com/voronkovich/fitzgerald) integration for [Vue](https://vuejs.org/).
 
+Demo is available [here](https://voronkovich.github.io/fitzgerald-vue/demo/dist/).
+
 ## Installation
 
 Install the package using [npm](https://www.npmjs.com/package/npm):
