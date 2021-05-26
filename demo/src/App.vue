@@ -1,7 +1,6 @@
 <template>
     <div class="flex h-screen">
         <div class="m-auto lg:w-1/2 bg-gray-100 rounded py-4 px-6">
-            <h1 class="text-2xl mb-4">Fitzgerald Demo</h1>
 
             <div v-if="username" class="my-2">
                 <p>
@@ -12,8 +11,8 @@
             </div>
 
             <div v-else class="my-2">
-                <p>First example is a just simple sign in form:</p>
-
+                <h2>First example</h2>
+                <p>Simple sign in form:</p>
                 <AppButton @click="showSignInModal" class="block my-4">Sign In</AppButton>
             </div>
 
@@ -21,15 +20,23 @@
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
 
-            <p class="my-2">Second example is a modal with long content and a scroll bar:</p>
-            <AppButton @click="showBigContentModal" class="block my-4" >Big Content</AppButton>
+            <h2 class="mt-5">Second example</h2>
+            <p>Modal with long content and a scroll bar:</p>
+            <AppButton
+                @click="showBigContentModal"
+                class="block my-4"
+            >Big Content</AppButton>
 
             <p class="my-2">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
 
-            <p>Third exmple is a modal with long content inside it:</p>
-            <AppButton @click="showTermsOfUseModal" class="block my-4">Terms Of Use</AppButton>
+            <h2 class="mt-5">Third example</h2>
+            <p>Modal with long content inside it:</p>
+            <AppButton
+                @click="showTermsOfUseModal"
+                class="block my-4"
+            >Terms Of Use</AppButton>
 
             <p class="my-2">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
