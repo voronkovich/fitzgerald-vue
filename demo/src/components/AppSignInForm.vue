@@ -34,11 +34,7 @@
         </div>
 
         <div class="flex items-center justify-between">
-            <button
-                class="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-6 rounded"
-                type="submit">
-                Sign In
-            </button>
+            <AppButton type="submit">Sign In</AppButton>
 
             <a
                 class="inline-block align-baseline text-sm text-blue-600 hover:text-blue-400"
@@ -48,3 +44,14 @@
         </div>
     </form>
 </template>
+
+<script>
+import AppButton from './AppButton.vue'
+
+export default {
+    name: 'AppSignInForm',
+    components: {
+        AppButton,
+    },
+}
+</script>
