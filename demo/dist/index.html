@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="./favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fitzgerald Demo</title>
+    <script type="module" crossorigin src="./assets/index.08a6b41d.js"></script>
+  <link rel="modulepreload" href="./assets/vendor.44e43750.js">
+  <link rel="stylesheet" href="./assets/index.811f08b3.css">
+</head>
+    <body>
+        <div id="app"></div>
+
+        <script src="https://unpkg.com/@ungap/promise-all-settled@1.1.2/min.js"></script>
+        <script>
+            if (!Promise.allSettled) {
+                Promise.allSettled = allSettled
+            }
+
+            if (!Promise.prototype.finally) {
+                Promise.prototype.finally = function(callback) {
+                    if (typeof callback !== 'function') {
+                        return this.then(callback, callback)
+                    }
+                    const P = this.constructor || Promise
+                    return this.then(
+                        value => P.resolve(callback()).then(() => value),
+                        err => P.resolve(callback()).then(() => { throw err })
+                    )
+                }
+            }
+        </script>
+
+        
+    </body>
+</html>
